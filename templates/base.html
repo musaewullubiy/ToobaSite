@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{{ title }}</title>
+  </head>
+<body>
+    <header>
+      <a class="header-title" href="/main">Tooba Game</a>
+      <nav>
+        <a class="nav navigation-map" href="/map">MAP</a>
+        <a class="nav navigation-map" href="/leaderboard">LEADBOARD</a>
+        <div class="account-button"></div>
+      </nav>
+    </header>
+
+<main role="main" class="container">
+    {% block content %}{% endblock %}
+</main>
+<footer><div class="copyright">© Tooba Game, 2022</div></footer>
+</body>
+</html>
